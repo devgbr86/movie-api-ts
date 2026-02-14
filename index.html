@@ -11,7 +11,19 @@
 <body>
      <h1>🎬 Buscador de Filmes</h1>
      <input id="search" type="text" placeholder="Digite o nome do filme e aperte Enter" />
-     <ul id="results"></ul>
+
+     <div class="container">
+          <div class="results-section">
+               <h2>Resultados</h2>
+               <ul id="results"></ul>
+          </div>
+
+          <div id="details-section" class="details-section hidden">
+               <button id="close-details" class="close-btn">✕</button>
+               <div id="movie-details"></div>
+          </div>
+     </div>
+
      <script type="module" src="./dist/main.js"></script>
 </body>
 
